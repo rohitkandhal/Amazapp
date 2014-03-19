@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amazapp.HomeActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/fragmentHeader"
+        class="view.FragmentHeader"
+        />
+
+    <fragment
+        android:id="@+id/fragmentItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="view.FragmentItems"
+        android:layout_weight="5"
+        />
+
+    <fragment
+        android:id="@+id/fragmentFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="view.FragmentFooter"
+        android:layout_weight="0.5"
+        />
+</LinearLayout>
+
